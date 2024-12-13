@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/loginPage.css" />
+    <link rel="icon" href="../img/icon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <img src="../img/pretty-macro-pink-blue-flower.jpg" alt="backgroundimg" />
+    <div class="container">
+      <div class="content_group">
+        <div class="inner_group">
+          <div class="content_title">Log in</div>
+          <form action="/login" method="POST">
+            <div class="content_input">
+              <label for="email">Email</label>
+              <input required name="email" type="email" placeholder="Email" />
+
+              <label for="passw">Password</label>
+              <input
+                type="password"
+                name="passw"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <div class="content_button">
+              <button type="submit">Log in</button>
+            </div>
+          </form>
+          <p>
+            You don't have an account? <a href="/html/signup.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

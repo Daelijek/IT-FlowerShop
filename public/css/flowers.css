@@ -1,0 +1,309 @@
+/*!Main */
+
+.main_search {
+  margin-top: 25px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar-nav_search img {
+  position: absolute;
+  right: 1040px;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+  filter: invert(0%);
+}
+
+.navbar-nav_search img:hover {
+  filter: invert(100%);
+}
+
+.navbar-nav_text {
+  padding-left: 20px;
+  height: 50px;
+  background-color: #fff;
+  width: 450px;
+  border-radius: 25px;
+}
+
+.main_container {
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.main_nav {
+  margin: auto;
+  width: 900px;
+  height: 50px;
+  border: 2px solid #e13b3b;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.main_nav_list {
+  cursor: pointer;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main_nav_item {
+  height: 47px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  padding: 10px 20px; /* Отступы для текста */
+  border-left: 2px solid #e13b3b; /* Линии между элементами */
+  text-align: center;
+  flex: 1; /* Уравнивание ширины элементов */
+  transition: 0.3s ease-in-out;
+}
+
+/* Убираем левую границу у первого элемента */
+.main_nav_item:first-child {
+  border-left: none;
+}
+
+.main_nav_item:first-child {
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+}
+
+.main_nav_item:last-child {
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+
+.main_nav_item:hover {
+  background-color: #e13b3b;
+  color: #fff;
+}
+
+/*!Cards */
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  height: 300px;
+  margin: 0 30px;
+  text-align: center;
+  background-color: #fff;
+  user-select: none;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.card_title {
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.card_btn {
+  border: 2px solid #e13b3b;
+  border-radius: 20px;
+  width: 100px;
+  height: 25px;
+  background-color: #e13b3b;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  color: #e13b3b;
+  background-color: #ffffff;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  width: 2000px;
+  min-height: 95%;
+  z-index: 10;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  /* Start with a slight scale-down */
+  opacity: 0;
+  /* Start with 0 opacity */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.modal.show {
+  opacity: 1;
+  /* Make it fully visible */
+  transform: translate(-50%, -50%) scale(1);
+  /* Scale up to normal size */
+}
+
+.modal_container {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+  color: #000000;
+}
+
+.modal_title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.modal_price {
+  font-size: 20px;
+  color: #000000;
+}
+
+.flex img {
+  max-width: 700px;
+  max-height: autp;
+  margin-left: 50px;
+  margin-right: 200px;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+}
+
+.modal_information {
+  margin-top: 100px;
+}
+
+.modal_options label {
+  display: block;
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+.modal_options select {
+  margin-bottom: 15px;
+  border: 1px solid #b1b1b1;
+  border-radius: 7px;
+  color: #999999;
+  height: 30px;
+  font-size: 14px;
+}
+
+.modal input {
+  font-size: 16px;
+}
+
+.modal p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.modal_description {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+  max-width: 560px;
+  color: #494949;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: #f04848;
+  color: white;
+  border: 2px solid #f04848;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  border-radius: 50%;
+}
+
+.btn-close img {
+  width: 20px;
+  margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Smooth transition */
+}
+
+.overlay.show {
+  opacity: 1;
+  /* Fully visible */
+}
+
+.hidden {
+  display: none;
+}

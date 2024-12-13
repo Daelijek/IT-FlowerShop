@@ -1,0 +1,41 @@
+
+/*!Main*/
+main {
+  user-select: none;
+  height: 568px;
+}
+
+main img {
+  position: absolute;
+  height: 1015px;
+}
+
+.main_container {
+  max-width: 1200px;
+}
+
+.main_order_button {
+  position: absolute;
+  right: 650px;
+  top: 800px;
+  width: 240px;
+  height: 75px;
+  background-color: #6e856e;
+  border: 2px solid #6e856e;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+
+.main_order_button:hover {
+  background-color: #f2f2f2;
+  color: #6e856e;
+}

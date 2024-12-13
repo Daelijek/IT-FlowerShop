@@ -1,0 +1,222 @@
+/*!Reset css*/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+/*!Header*/
+.header_container {
+  background-color: #cdc6ac;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  max-width: 1200px;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navbar_nav {
+  justify-content: space-between;
+}
+
+.navbar_logo {
+  width: 300px;
+  user-select: none;
+}
+
+.navbar_nav_list {
+  display: flex;
+}
+
+.navbar_nav_item {
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.navbar_nav_item:not(:first-child) {
+  margin-left: 60px;
+}
+
+.navbar_nav_link {
+  position: relative; /* Это нужно для позиционирования псевдоэлемента */
+  transition: color 0.3s ease-in-out;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar_nav_link::after {
+  content: ""; /* Псевдоэлемент будет пустым */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #e13b3b;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(-50%); /* Центрируем линию относительно элемента */
+}
+
+.navbar_nav_link:hover {
+  color: #e13b3b;
+}
+
+.navbar_nav_link:hover::after {
+  width: 100%;
+  left: 50%;
+}
+
+/*!Footer*/
+
+footer {
+  background-color: #86a182;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  position: static;
+  width: 100%;
+}
+
+.footer_logo img {
+  height: 70px;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_network {
+  width: 170px;
+}
+
+.telegram {
+  margin-bottom: 30px;
+}

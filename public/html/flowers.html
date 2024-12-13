@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="../img/icon.png">
+    <link rel="stylesheet" href="../css/hed_fot.css">
+    <link rel="stylesheet" href="../css/flowers.css" />
+    <link rel="icon" href="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>IT-FlowerShop | Main</title>
+  </head>
+  <body>
+    
+    <header>
+      <div class="header_container">
+        <div class="navbar">
+          <div class="navbar_logo">
+            <img
+              draggable="false"
+              src="../img/IT_Flower_Shop.png"
+              alt="header_logo"
+            />
+          </div>
+          <div class="navbar_nav">
+            <ul class="navbar_nav_list">
+              <li class="navbar_nav_item">
+                <a href="/" class="navbar_nav_link">home</a>
+              </li>
+              <li class="navbar_nav_item">
+                <a href="/html/flowers.html" class="navbar_nav_link">flowers</a>
+              </li>
+              <li class="navbar_nav_item">
+                <a href="/html/aboutUs.html" class="navbar_nav_link">about us</a>
+              </li>
+              <li class="navbar_nav_item">
+                <!-- Показывать "Log Out" если пользователь авторизован, иначе "Login" -->
+                <a href="/logout" class="navbar_nav_link" id="auth-link">login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+      <main>
+        <div class="main_container">          
+            <div class="main_nav">
+            <ul class="main_nav_list">
+              <li class="main_nav_item" onclick="filterCategory('all')">ALL</li>
+              <li class="main_nav_item" onclick="filterCategory('bouquets')">BOUQUETS</li>
+              <li class="main_nav_item" onclick="filterCategory('combo')">COMBOS</li>
+              <li class="main_nav_item" onclick="filterCategory('sweats')">SWEATS</li>
+              <li class="main_nav_item" onclick="filterCategory('soft-toys')">SOFT TOYS</li>
+            </ul>
+          </div>
+          <div class="main_search">
+              <button class="navbar-nav_search">
+                <input type="text" class="navbar-nav_text" placeholder="Search products" id="search_flowers">
+                <img src="../img/glass.png" alt="Search Icon" id="search_button">
+            </button>
+          </div>
+
+          <div class="main_cards">
+            <div class="main_catalog" id="results_list">
+              <div class="event_cards">
+                <div class="row bouquets">
+                  <div class="card">
+                    <img draggable="false" src="../img/eveningRomance.jpg" alt="Evening Romance" />
+                    <div class="card_information">
+                      <h1 class="card_title">Evening Romance</h1>
+                      <button
+                        class="card_btn"
+                        data-title="Evening Romance"
+                        data-price="$65"
+                        data-description="We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                        as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                        ."
+                        data-image="../img/eveningRomance.jpg"
+                      >
+                        Order
+                      </button>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <img
+                      draggable="false"
+                      src="../img/whisperOfLove.jpg"
+                      alt="Whisper of Love"
+                    />
+                    <div class="card_information">
+                      <h1 class="card_title">
+                        Whisper of Love
+                      </h1>
+                      <button
+                        class="card_btn"
+                        data-title='Whisper of Love'
+                        data-price="$62"
+                        data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                        as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                        '
+                        data-image="../img/whisperOfLove.jpg"
+                      >
+                        Order
+                      </button>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <img
+                      draggable="false"
+                      src="../img/royalCharm.jpg"
+                      alt="Royal Charm"
+                    />
+                    <div class="card_information">
+                      <h1 class="card_title">Royal Charm</h1>
+                      <button
+                        class="card_btn"
+                        data-title="Royal Charm"
+                        data-price="$80"
+                        data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                        as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                        '
+                        data-image="../img/royalCharm.jpg"
+                      >
+                        Order
+                      </button>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <img
+                      draggable="false"
+                      src="../img/secretOfLove.jpg"
+                      alt="Secret of Love"
+                    />
+                    <div class="card_information">
+                      <h1 class="card_title">
+                        Secret of Love
+                      </h1>
+                      <button
+                        class="card_btn"
+                        data-title="Secret of Love"
+                        data-price="$60"
+                        data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                        as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                        .'
+                        data-image="../img/secretOfLove.jpg"
+                      >
+                        Order
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row combo">
+                    <div class="card">
+                      <img draggable="false" src="../img/combo_rose_raf.jpg" alt="Evening Romance" />
+                      <div class="card_information">
+                        <h1 class="card_title">Combo of Red Roses and Raffaello</h1>
+                        <button
+                          class="card_btn"
+                          data-title="Combo of Red Roses and Raffaello"
+                          data-price="$32"
+                          data-description="We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                          as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                          ."
+                          data-image="../img/combo_rose_raf.jpg"
+                        >
+                          Order
+                        </button>
+                      </div>
+                    </div>
+      
+                    <div class="card">
+                      <img
+                        draggable="false"
+                        src="../img/combo_wrose_fer.jpg"
+                        alt="Whisper of Love"
+                      />
+                      <div class="card_information">
+                        <h1 class="card_title">
+                          Combo of White Roses and Ferrerro
+                        </h1>
+                        <button
+                          class="card_btn"
+                          data-title='Combo of White Roses and Ferrerro'
+                          data-price="$32"
+                          data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                          as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                          '
+                          data-image="../img/combo_wrose_fer.jpg"
+                        >
+                          Order
+                        </button>
+                      </div>
+                    </div>
+      
+                    <div class="card">
+                      <img
+                        draggable="false"
+                        src="../img/combo_prose_raf.jpg"
+                        alt="Royal Charm"
+                      />
+                      <div class="card_information">
+                        <h1 class="card_title">Combo of Pink Roses and Raffaello</h1>
+                        <button
+                          class="card_btn"
+                          data-title="Combo of Pink Roses and Raffaello"
+                          data-price="$33"
+                          data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                          as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                          '
+                          data-image="../img/combo_prose_raf.jpg"
+                        >
+                          Order
+                        </button>
+                      </div>
+                    </div>
+      
+                    <div class="card">
+                      <img
+                        draggable="false"
+                        src="../img/combo_nameYourStar.jpg"
+                        alt="Secret of Love"
+                      />
+                      <div class="card_information">
+                        <h1 class="card_title">
+                          Combo "In the Name of your star"
+                        </h1>
+                        <button
+                          class="card_btn"
+                          data-title='Combo "In the Name of your star"'
+                          data-price="$34"
+                          data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                          as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                          .'
+                          data-image="../img/combo_nameYourStar.jpg"
+                        >
+                          Order
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="row sweats">
+                <div class="card">
+                  <img draggable="false" src="../img/dates_chocolate 1.png" alt="Evening Romance" />
+                  <div class="card_information">
+                    <h1 class="card_title">Dates in Chocolate</h1>
+                    <button
+                      class="card_btn"
+                      data-title="Dates in Chocolate"
+                      data-price="$24"
+                      data-description="We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      ."
+                      data-image="../img/dates_choolate.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    draggable="false"
+                    src="../img/nuts_chocolate 1.png"
+                    alt="Whisper of Love"
+                  />
+                  <div class="card_information">
+                    <h1 class="card_title">
+                      Nuts in Chocolate
+                    </h1>
+                    <button
+                      class="card_btn"
+                      data-title='Nuts in Chocolate'
+                      data-price="$24"
+                      data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      '
+                      data-image="../img/nuts_chocolate.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    draggable="false"
+                    src="../img/bento_cake 1.png"
+                    alt="Royal Charm"
+                  />
+                  <div class="card_information">
+                    <h1 class="card_title">Bento Cake</h1>
+                    <button
+                      class="card_btn"
+                      data-title="Bento Cake"
+                      data-price="$9"
+                      data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      '
+                      data-image="../img/bento_cake.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    draggable="false"
+                    src="../img/dates_timsan.jpg"
+                    alt="Secret of Love"
+                  />
+                  <div class="card_information">
+                    <h1 class="card_title">
+                      Timsan Dairy Dates
+                    </h1>
+                    <button
+                      class="card_btn"
+                      data-title="Timsan Dairy Dates"
+                      data-price="$11"
+                      data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      .'
+                      data-image="../img/dates_timsan.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row soft-toys">
+                <div class="card">
+                  <img draggable="false" src="../img/сapybara 1.jpg" alt="Evening Romance" />
+                  <div class="card_information">
+                    <h1 class="card_title">Capybara</h1>
+                    <button
+                      class="card_btn"
+                      data-title="Capybara"
+                      data-price="$12"
+                      data-description="We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      ."
+                      data-image="../img/capybara.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    draggable="false"
+                    src="../img/monica_bear 1.png"
+                    alt="Whisper of Love"
+                  />
+                  <div class="card_information">
+                    <h1 class="card_title">
+                      Monica Bear
+                    </h1>
+                    <button
+                      class="card_btn"
+                      data-title='Monica Bear'
+                      data-price="$11"
+                      data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      '
+                      data-image="../img/bear.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    draggable="false"
+                    src="../img/goose_hug 1.png"
+                    alt="Royal Charm"
+                  />
+                  <div class="card_information">
+                    <h1 class="card_title">Goose-hug</h1>
+                    <button
+                      class="card_btn"
+                      data-title="Goose-hug"
+                      data-price="$19"
+                      data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      '
+                      data-image="../img/goose.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img
+                    draggable="false"
+                    src="../img/teddy 2.png"
+                    alt="Secret of Love"
+                  />
+                  <div class="card_information">
+                    <h1 class="card_title">
+                      Teddy Dias
+                    </h1>
+                    <button
+                      class="card_btn"
+                      data-title="Teddy Dias"
+                      data-price="$13"
+                      data-description='We would like to draw your attention to the fact that the appearance and price of bouquets may vary slightly. Our florists always strive to create a bouquet
+                      as close as possible to the presented version! But sometimes certain colors are out of stock or the shade may be different.
+                      .'
+                      data-image="../img/teddy.jpg"
+                    >
+                      Order
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    
+    
+        <section class="modal hidden">
+            <div class="flex">
+                <img src="../img/combo_roses_raffaello.jpg" alt="user" />
+                <button class="btn-close"><img src="../img/close.png" alt="close button"></button>
+            </div>
+            <div class="modal_container">
+                <div class="modal_information">
+                    <h1 class="modal_title">A combo of red roses and Raffaello</h1>
+                    <p class="modal_price">
+                        16.300 tg
+                    </p>
+                </div>
+                <div class="modal_options">
+                    <label for="notes">Add a postcard</label>
+                    <select name="notes" id="notes">
+                        <option value="notSelected">Not selected</option>
+                        <option value="note">Add a note - 350tg</option>
+                        <option value="postcard">Add a postcard - 500tg</option>
+                    </select>
+    
+                    <label for="sweats">Add sweats</label>
+                    <select name="sweats" id="sweats">
+                        <option value="notSelected">Not selected</option>
+                        <option value="date">Date in chocolate (12 p.) - 12 000tg</option>
+                        <option value="raffaello">Nuts in chocolate - 12,000 tg</option>
+                        <option value="bento">Bento cake - 4 500tg</option>
+                        <option value="merci">Timsan Dairy dates - 5,500 tg</option>
+                    </select>
+    
+                    <label for="toys">Add Soft Toys</label>
+                    <select name="toys" id="toys">
+                        <option value="notSelected">Not selected</option>
+                        <option value="bunny">Monica Bear (35 cm) - 5,500 tg</option>
+                        <option value="goose">Goose-hug (110 cm) - 9 300 tg</option>
+                        <option value="capybara">Capybara (35 cm) - 6,100 tg</option>
+                        <option value="pikachu">Pikachu - 8,300tg</option>
+                    </select>
+                </div>
+                <button class="btn">Add to cart</button>
+                <p class="modal_description"><strong>
+                </p>
+            </div>
+        </section>
+    
+        <div class="overlay hidden"></div>
+    
+    
+      </main>
+    
+      <footer>
+        <div class="footer_container">
+          <div class="footer_logo">
+            <img draggable="false" src="../img/footer_logo.png" alt="footer-logo" />
+          </div>
+          <div class="social_network">
+            <div class="telegram">
+              <a target="_blank" href="https://t.me/daelijek_og"
+                ><img src="../img/telegram.png" alt="telegram"
+              /></a>
+            </div>
+            <div class="instagram">
+              <a target="_blank" href="https://www.instagram.com/daelijek_og/"
+                ><img src="../img/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="../js/main.js"></script>
+  </body>
+
+</html>
